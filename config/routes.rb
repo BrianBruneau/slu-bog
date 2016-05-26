@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  # get 'tags/index'
+
+  # get 'tags/show'
+
   # get 'creatures/index'
 
   # get 'creatures/new'
@@ -15,9 +19,10 @@ Rails.application.routes.draw do
 
   # get 'main/index'
 
-  root 'main#index'
+  root 'creatures#index'
 
   resources :creatures
+  resources :tags
 
 
   # The priority is based upon order of creation: first created -> highest priority.
